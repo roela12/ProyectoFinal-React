@@ -2,10 +2,11 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import CartWidgetComponent from "../CartWidgetComponent/CartWidgetComponent";
 
 const NavBarComponent = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="#home">Peso Ligero</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -19,6 +20,7 @@ const NavBarComponent = () => {
               <NavDropdown.Item href="#action/3.3">Aparatos</NavDropdown.Item>
             </NavDropdown>
           </Nav>
+          <CartWidgetComponent />
         </Navbar.Collapse>
       </Container>
     </Navbar>
