@@ -1,21 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { iconStyles } from "./CartWidgetComponent.styles";
+import { numberStyles } from "./CartWidgetComponent.styles";
 
 const CartWidgetComponent = () => {
-  const iconStyles = {
-    fontSize: "1.5rem",
-    paddingRight: "5px",
-    color: "gray",
-  };
-  const numberStyle = {
-    fontWeight: "bold",
-    fontSize: "1.1rem",
-    color: "#3498db",
-  };
   return (
     <div>
       <FontAwesomeIcon style={iconStyles} icon={faCartShopping} />
-      <span style={numberStyle}>5</span>
+      <span style={numberStyles}>5</span>
     </div>
   );
 };
