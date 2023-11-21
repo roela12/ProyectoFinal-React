@@ -1,6 +1,12 @@
-export const greetingStyles = {
-  color: "white",
-  fontSize: "4rem",
-  fontWeight: "800",
-  textAlign: "center",
+export const productsStyles = {
+  display: "flex",
+  flexWrap: "wrap",
+  width: "100vw",
+  justifyContent: "space-around",
+};
+
+export const cardStyles = {
+  width: "18rem",
+  margin: 20,
+  height: "500px",
 };
