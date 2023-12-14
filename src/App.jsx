@@ -1,4 +1,4 @@
-import MainRoutes from "./routes/MainRoutes";
+import { MainRoutes } from "./routes";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 

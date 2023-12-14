@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import ItemListContainer from "../Components/ItemListContainer/ItemListContainer";
+import { ItemListContainer } from "../Components";
 import axios from "axios";
 
-const Home = () => {
+export const Home = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -17,5 +17,3 @@ const Home = () => {
   }, []);
   return <ItemListContainer products={products} />;
 };
-
-export default Home;

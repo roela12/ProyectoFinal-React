@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import ItemListContainer from "../Components/ItemListContainer/ItemListContainer";
+import { ItemListContainer } from "../Components";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-const Category = () => {
+export const Category = () => {
   const [products, setProducts] = useState([]);
   const { categoryId } = useParams();
 
@@ -20,5 +20,3 @@ const Category = () => {
 
   return <ItemListContainer products={products} />;
 };
-
-export default Category;

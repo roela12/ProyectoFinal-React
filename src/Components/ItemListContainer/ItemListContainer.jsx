@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { productsStyles, cardStyles } from "./ItemListContainer.styles";
 
-const ItemListContainer = ({ products }) => {
+export const ItemListContainer = ({ products }) => {
   return (
     <div style={productsStyles}>
       {products.map((product) => {
@@ -22,4 +22,3 @@ const ItemListContainer = ({ products }) => {
     </div>
   );
 };
-export default ItemListContainer;
