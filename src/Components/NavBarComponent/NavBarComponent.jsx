@@ -36,12 +36,12 @@ export const NavBarComponent = () => {
               </NavDropdown.Item>
               <NavDropdown.Item>
                 <Link to={"/category/maquinas"} style={linkStyles}>
-                  Maquinas
+                  Máquinas
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
                 <Link to={"/category/bandas"} style={linkStyles}>
-                  Bandas elasticas
+                  Bandas elásticas
                 </Link>
               </NavDropdown.Item>
             </NavDropdown>

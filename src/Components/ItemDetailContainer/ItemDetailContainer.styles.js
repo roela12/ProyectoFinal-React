@@ -8,4 +8,7 @@ export const cardStyles = {
   width: "auto",
   margin: "20px 300px",
   height: "auto",
+  display: "grid",
+  gridTemplateColumns: "auto auto",
+  alignItems: "center",
 };

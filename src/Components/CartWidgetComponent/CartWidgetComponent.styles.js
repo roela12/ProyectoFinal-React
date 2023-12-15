@@ -6,5 +6,5 @@ export const iconStyles = {
 export const numberStyles = {
   fontWeight: "bold",
   fontSize: "1.1rem",
-  color: "#3498db",
+  color: "white",
 };

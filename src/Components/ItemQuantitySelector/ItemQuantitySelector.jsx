@@ -17,9 +17,17 @@ export const ItemQuantitySelector = () => {
   };
   return (
     <div>
-      <Button onClick={handleSubstractProduct}>-</Button>
+      <Button
+        variant="dark"
+        style={{ margin: 5 }}
+        onClick={handleSubstractProduct}
+      >
+        -
+      </Button>
       <input type="number" value={quantity} disabled />
-      <Button onClick={handleAddProduct}>+</Button>
+      <Button variant="dark" style={{ margin: 5 }} onClick={handleAddProduct}>
+        +
+      </Button>
       <AddItemButton
         handleResetQuantity={handleResetQuantity}
         quantity={quantity}

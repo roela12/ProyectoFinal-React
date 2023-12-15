@@ -11,8 +11,8 @@ export const ItemDetailContainer = ({ product }) => {
         <Card.Body>
           <Card.Title>{product.title}</Card.Title>
           <Card.Text>{product.description}</Card.Text>
+          <ItemQuantitySelector />
         </Card.Body>
-        <ItemQuantitySelector />
       </Card>
     </div>
   );

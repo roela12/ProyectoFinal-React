@@ -12,5 +12,9 @@ export const AddItemButton = ({
     setItemCount(itemCount + quantity);
     handleResetQuantity();
   };
-  return <Button onClick={handleAddCart}>{label}</Button>;
+  return (
+    <Button variant="dark" onClick={handleAddCart}>
+      {label}
+    </Button>
+  );
 };
