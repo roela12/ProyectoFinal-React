@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { cardStyles, imageStyles } from "./ItemDetailContainer.styles";
-import { ItemQuantitySelector } from "../ItemQuantitySelector";
+import { ItemQuantitySelector } from "../../Components";
 
 export const ItemDetailContainer = ({ product }) => {
   return (
