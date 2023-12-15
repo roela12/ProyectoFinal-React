@@ -34,6 +34,16 @@ export const NavBarComponent = () => {
                   Barras
                 </Link>
               </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to={"/category/maquinas"} style={linkStyles}>
+                  Maquinas
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to={"/category/bandas"} style={linkStyles}>
+                  Bandas elasticas
+                </Link>
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <CartWidgetComponent />
