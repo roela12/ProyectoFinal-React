@@ -1,22 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { ItemListContainer } from "../Components";
-import axios from "axios";
 import { useParams } from "react-router-dom";
+import { useAllProductsByFilter } from "../hooks/useProducts";
 
 export const Category = () => {
-  const [products, setProducts] = useState([]);
   const { categoryId } = useParams();
-
-  useEffect(() => {
-    axios
-      .get(`https://dummyjson.com/products/category/${categoryId}`)
-      .then((res) => {
-        setProducts(res.data.products);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, [categoryId]);
+  const { products } = useAllProductsByFilter(
+    "products",
+    categoryId,
+    "category"
+  );
 
   return <ItemListContainer products={products} />;
 };

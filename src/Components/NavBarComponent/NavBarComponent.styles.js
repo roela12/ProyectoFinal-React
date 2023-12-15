@@ -1,6 +1,6 @@
 export const linkStyles = {
   textDecoration: "None",
-  color: "gray",
+  color: "white",
 };
 
 export const mainLinkStyles = {
