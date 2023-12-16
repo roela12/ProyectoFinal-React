@@ -14,7 +14,13 @@ export const ItemListContainer = ({ products }) => {
             </Link>
             <Card.Body>
               <Card.Title>{product.title}</Card.Title>
-              <Card.Text>{product.description}</Card.Text>
+              <Card.Text>
+                $
+                {product.price.toLocaleString("es-ES", {
+                  style: "currency",
+                  currency: "ARS",
+                })}
+              </Card.Text>
             </Card.Body>
           </Card>
         );

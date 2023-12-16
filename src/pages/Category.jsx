@@ -2,7 +2,7 @@ import React from "react";
 import { ItemListContainer } from "../Components";
 import { useParams } from "react-router-dom";
 import { useAllProductsByFilter } from "../hooks/useProducts";
-import Spinner from "react-bootstrap/Spinner";
+import { LoadComponent } from "../Components";
 
 export const Category = () => {
   const { categoryId } = useParams();
@@ -12,9 +12,9 @@ export const Category = () => {
     "category"
   );
   return (
-    <div style={{ textAlign: "center" }}>
+    <div>
       {loading ? (
-        <Spinner animation="border" />
+        <LoadComponent />
       ) : error ? (
         <div>Error</div>
       ) : (

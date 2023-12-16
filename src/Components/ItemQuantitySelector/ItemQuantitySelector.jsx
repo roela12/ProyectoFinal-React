@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { AddItemButton } from "../AddItemButton";
+import { buttonStyles } from "./ItemQuantitySelector.styles";
 
 export const ItemQuantitySelector = () => {
   const [quantity, setQuantity] = React.useState(1);
@@ -19,13 +20,13 @@ export const ItemQuantitySelector = () => {
     <div>
       <Button
         variant="dark"
-        style={{ margin: 5 }}
+        style={buttonStyles}
         onClick={handleSubstractProduct}
       >
         -
       </Button>
       <input type="number" value={quantity} disabled />
-      <Button variant="dark" style={{ margin: 5 }} onClick={handleAddProduct}>
+      <Button variant="dark" style={buttonStyles} onClick={handleAddProduct}>
         +
       </Button>
       <AddItemButton

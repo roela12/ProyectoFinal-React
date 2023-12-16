@@ -1,15 +1,15 @@
 import React from "react";
 import { useAllProducts } from "../hooks/useProducts";
 import { ItemListContainer } from "../Components";
-import Spinner from "react-bootstrap/Spinner";
+import { LoadComponent } from "../Components";
 
 export const Home = () => {
   const { products, loading, error } = useAllProducts(15);
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div>
       {loading ? (
-        <Spinner animation="border" />
+        <LoadComponent />
       ) : error ? (
         <div>Error</div>
       ) : (
