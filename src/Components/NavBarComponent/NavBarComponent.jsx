@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { CartWidgetComponent } from "../CartWidgetComponent";
 import { Link } from "react-router-dom";
-import { linkStyles, mainLinkStyles } from "./NavBarComponent.Styles";
+import { linkStyles, mainLinkStyles } from "./NavBarComponent.Styles.js";
 
 export const NavBarComponent = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import Spinner from "react-bootstrap/Spinner";
-import { spinnerStyles } from "./LoadComponent.styles";
+import { spinnerStyles } from "./LoadComponent.styles.js";
 
 export const LoadComponent = () => {
   return (

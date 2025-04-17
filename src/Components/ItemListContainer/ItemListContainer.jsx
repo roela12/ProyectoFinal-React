@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { productsStyles, cardStyles } from "./ItemListContainer.styles";
+import { productsStyles, cardStyles } from "./ItemListContainer.styles.js";
 
 export const ItemListContainer = ({ products }) => {
   return (

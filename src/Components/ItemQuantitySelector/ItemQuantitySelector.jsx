@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { AddItemButton } from "../AddItemButton";
-import { buttonStyles } from "./ItemQuantitySelector.styles";
+import { buttonStyles } from "./ItemQuantitySelector.styles.js";
 
 export const ItemQuantitySelector = () => {
   const [quantity, setQuantity] = React.useState(1);
